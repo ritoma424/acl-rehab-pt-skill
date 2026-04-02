@@ -1,35 +1,35 @@
-# 🦵 ACL Rehab Expert PT Skill
+# 🦵 ACL 康复专家 PT Skill
 
-A structured AI-powered rehabilitation assistant designed for **ACL reconstruction recovery**, especially for complex cases involving:
+一个结构化的 AI 康复助手，专为 **前交叉韧带（ACL）重建术后恢复** 设计，尤其适用于复杂手术场景：
 
-* ACL reconstruction (hamstring graft)
-* Meniscus repair (including posterior root repair)
-* Notchplasty
-* Multi-procedure knee surgeries
+* ACL 重建（腘绳肌移植）
+* 半月板修复（尤其后根修复）
+* 髁间窝成型
+* 多术式联合膝关节手术
 
-This skill turns LLMs (e.g. Claude) into a **professional-level physical therapist assistant**, providing:
+该 Skill 可以将大模型（如 Claude）转化为一个**接近专业水平的康复治疗师助手**，帮助你进行：
 
-* 📊 Recovery stage assessment
-* 🏋️ Training plan evaluation
-* ⚠️ Risk detection (meniscus / graft / swelling)
-* 🧠 Personalized rehab adjustments
-* 📈 Progress scoring
-
----
-
-## 🚀 Features
-
-* ✅ Persistent patient context (initialized once, reused forever)
-* ✅ Structured JSON input/output
-* ✅ Risk-first decision logic (meniscus root > ACL progression)
-* ✅ Clinical reasoning (not generic advice)
-* ✅ Daily rehab tracking support
+* 📊 康复阶段判断
+* 🏋️ 训练计划评估
+* ⚠️ 风险识别（半月板 / 移植物 / 积液）
+* 🧠 个性化康复调整
+* 📈 恢复进度评分
 
 ---
 
-## 🧠 How It Works
+## 🚀 功能特点
 
-### 1️⃣ Initialize Patient Context (First Use)
+* ✅ 患者信息一次初始化，长期复用
+* ✅ 标准化 JSON 输入输出
+* ✅ 风险优先决策（半月板后根 > ACL进度）
+* ✅ 基于临床逻辑分析（非泛泛建议）
+* ✅ 支持每日康复跟踪
+
+---
+
+## 🧠 工作流程
+
+### 1️⃣ 初始化患者信息（首次使用）
 
 ```json
 {
@@ -50,7 +50,7 @@ This skill turns LLMs (e.g. Claude) into a **professional-level physical therapi
 
 ---
 
-### 2️⃣ Daily Rehab Input
+### 2️⃣ 每日康复输入
 
 ```json
 {
@@ -84,62 +84,68 @@ This skill turns LLMs (e.g. Claude) into a **professional-level physical therapi
 
 ---
 
-## 📊 Output Structure
+## 📊 输出内容说明
 
-The AI will respond with:
+AI 会返回以下结构化分析结果：
 
-1. Recovery stage assessment
-2. Training evaluation (✅ ⚠️ ❌)
-3. Personalized rehab prescription
-4. Pain & risk classification (🟢 🟡 🔴)
-5. Recovery score (0–100)
-6. Forbidden movements
-7. Next-step priorities
-
----
-
-## ⚠️ Disclaimer
-
-This project is **NOT a medical diagnosis tool**.
-It is designed for **educational and self-tracking purposes only**.
-
-Always consult a licensed medical professional for:
-
-* Severe pain
-* Swelling
-* Instability
-* Suspected re-injury
+1. 康复阶段判断
+2. 训练动作评估（✅ 合理 / ⚠️ 风险 / ❌ 禁止）
+3. 个性化康复方案（具体到组数/次数）
+4. 疼痛与风险分级（🟢 🟡 🔴）
+5. 恢复评分（0–100）
+6. 禁忌动作清单
+7. 下一阶段重点
 
 ---
 
-## 🧩 Use Cases
+## ⚠️ 免责声明
 
-* ACL post-op patients tracking rehab
-* Physical therapy assistants
-* Sports rehab enthusiasts
-* AI + healthcare experimentation
+本项目 **不构成医疗诊断或治疗建议**，仅用于：
 
----
+* 康复知识辅助理解
+* 自我训练记录与分析
 
-## 📌 Roadmap
+如出现以下情况，请及时就医：
 
-* [ ] Return-to-sport readiness module
-* [ ] Symmetry scoring (left vs right)
-* [ ] Rehab progression timeline tracking
-* [ ] Visualization dashboard
+* 持续或加重的疼痛
+* 明显肿胀或皮温升高
+* 膝关节不稳定（打软腿）
+* 疑似再次损伤
 
 ---
 
-## 🤝 Contributing
+## 🧩 适用场景
 
-Feel free to open issues or submit PRs to improve:
-
-* Rehab logic
-* Risk detection
-* Training templates
+* ACL术后康复患者自我管理
+* 康复训练记录与分析
+* PT辅助决策参考
+* AI + 医疗康复探索
 
 ---
 
-## 📄 License
+## 📌 未来规划（Roadmap）
+
+* [ ] 回归运动（Return to Sport）评估模块
+* [ ] 双侧力量对称性分析
+* [ ] 康复进度曲线追踪
+* [ ] 可视化仪表盘
+
+---
+
+## 🤝 参与贡献
+
+欢迎提交 Issue 或 PR，一起优化：
+
+* 康复评估逻辑
+* 风险识别模型
+* 训练动作库
+
+---
+
+## 📄 开源协议
 
 MIT License
+
+---
+
+⭐ 如果这个项目对你有帮助，欢迎点个 Star！
